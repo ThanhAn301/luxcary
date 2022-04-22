@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Button from '@mui/material/Button';
 
 function LogIn() {
     return (
@@ -8,7 +9,12 @@ function LogIn() {
             <InfoContainer>
                 <InputText onfocus="this.placeholder=''" onblur="this.placeholder='Tên đăng nhập'" placeholder="Tên đăng nhập"></InputText>
                 <InputText onfocus="this.placeholder=''" onblur="this.placeholder='Mật khẩu'" placeholder="Mật khẩu"></InputText>
-                <SubmitButton>Đăng nhập</SubmitButton>
+                <Button 
+                    variant='contained'
+                    type="submit"
+                    sx={{ mt: 3, mb: 2 }}
+                    size="medium"
+                >Đăng nhập</Button>
             </InfoContainer>
         </LogInContainer>
     )
@@ -23,12 +29,12 @@ const LogInContainer = styled.div`
 
 const Title = styled.h2`
     text-align: center;
+    text-decoration: none;
 `
 
 const InfoContainer = styled.form`
     display: flex;
     flex-direction: column;
-
 `
 
 const InputText = styled.input`
@@ -37,12 +43,5 @@ const InputText = styled.input`
     width: 60%;
     border: 1px solid #1eabc3;
     border-radius: 5px;
-`
-
-const SubmitButton = styled.button`
-    background-color: #1eabc3;
-    width: 20%;
-    height: 10%;
-    border: 1px white;
 `
 export default LogIn

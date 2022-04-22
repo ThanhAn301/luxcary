@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
+import Button from "@mui/material/Button";
 
 function SignUp() {
     return (
@@ -10,7 +11,12 @@ function SignUp() {
                 <InputText onfocus="this.placeholder=''" onblur="this.placeholder='Mật khẩu'" placeholder="Mật khẩu"></InputText>
                 <InputText onfocus="this.placeholder=''" onblur="this.placeholder='Nhập lại mật khẩu'" placeholder="Nhập lại mật khẩu"></InputText>
                 <InputText onfocus="this.placeholder=''" onblur="this.placeholder='Email'" placeholder="Email"></InputText>
-                <SubmitButton>Đăng ký</SubmitButton>
+                <Button 
+                    variant='contained'
+                    type="submit"
+                    sx={{ mt: 3, mb: 2 }}
+                    size="medium"
+                >Đăng ký</Button>
             </InfoContainer>
         </SignUpContainer>
     )
@@ -38,12 +44,5 @@ const InputText = styled.input`
     width: 60%;
     border: 1px solid #1eabc3;
     border-radius: 5px;
-`
-
-const SubmitButton = styled.button`
-    background-color: #1eabc3;
-    width: 20%;
-    height: 10%;
-    border: 1px white;
 `
 export default SignUp
