@@ -4,7 +4,6 @@ import { TextField } from "@mui/material";
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import PhoneInputWithCountrySelect from "react-phone-number-input";
 
 function SignUp() {
     return (
@@ -53,7 +52,6 @@ function SignUp() {
                         autoFocus
                         autoComplete='email'
                         margin='normal'/>
-                    <PhoneInputWithCountrySelect/>
                     <Button 
                         variant='contained'
                         fullWidth

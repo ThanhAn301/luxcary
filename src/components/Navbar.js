@@ -6,6 +6,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { RiAccountCircleFill } from "react-icons/ri";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaTimes } from "react-icons/fa";
+
 function Navbar({ toggleModal }) {
     const [openMenu, setOpenMenu] = useState(false);
 
@@ -105,7 +106,8 @@ function Navbar({ toggleModal }) {
                 <NavbarRight>
                     <NavbarOptionRight>
                         <NavbarOptionRightItem>
-                            <Link to="/">GIỚI THIỆU</Link>
+                            <Link to="/intro">GIỚI THIỆU</Link>
+                            
                         </NavbarOptionRightItem>
                         <NavbarOptionRightItem>
                             <Link to="/">TIN TỨC</Link>
@@ -364,6 +366,7 @@ display: none;
 `
 
 const NavbarOptionItem = styled.li`
+    z-index: 999;
     position: relative;
     list-style: none;
     margin: 0 13px;
