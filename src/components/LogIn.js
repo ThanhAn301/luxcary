@@ -1,47 +1,51 @@
 import React from 'react'
-import styled from 'styled-components'
 import Button from '@mui/material/Button';
+import { TextField } from '@mui/material';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
 
 function LogIn() {
     return (
-        <LogInContainer>
-            <Title>Đăng nhập</Title>
-            <InfoContainer>
-                <InputText onfocus="this.placeholder=''" onblur="this.placeholder='Tên đăng nhập'" placeholder="Tên đăng nhập"></InputText>
-                <InputText onfocus="this.placeholder=''" onblur="this.placeholder='Mật khẩu'" placeholder="Mật khẩu"></InputText>
-                <Button 
-                    variant='contained'
-                    type="submit"
-                    sx={{ mt: 3, mb: 2 }}
-                    size="medium"
-                >Đăng nhập</Button>
-            </InfoContainer>
-        </LogInContainer>
+        <Container component="main" maxWidth="xs">
+            <Box
+                sx={{
+                    marginTop: 8,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                }}
+            >
+                <Typography component="h1" variant="h5">
+                    Đăng nhập
+                </Typography>
+                <Box component="form" noValidate sx={{ mt: 1 }}>
+                    <TextField
+                        required
+                        fullWidth
+                        id="username"
+                        label="Tên đăng nhập"
+                        autoFocus
+                        autoComplete='username'
+                        margin='normal'/>
+                    <TextField
+                        required
+                        fullWidth
+                        id="password"
+                        label="Mật khẩu"
+                        type="password"
+                        autoComplete="current-password"
+                        margin='normal'/>
+                    <Button 
+                        variant='contained'
+                        fullWidth
+                        type="submit"
+                        sx={{ mt: 3, mb: 2 }}
+                        size="medium"
+                    >Đăng nhập</Button>
+                </Box>
+            </Box>
+        </Container>
     )
 }
-
-const LogInContainer = styled.div`
-    margin: 50px auto;
-    border: 1px solid black;
-    border-radius: 20px;
-    width: 40%;
-`
-
-const Title = styled.h2`
-    text-align: center;
-    text-decoration: none;
-`
-
-const InfoContainer = styled.form`
-    display: flex;
-    flex-direction: column;
-`
-
-const InputText = styled.input`
-    margin: 5px auto;
-    height: 30px;
-    width: 60%;
-    border: 1px solid #1eabc3;
-    border-radius: 5px;
-`
 export default LogIn
