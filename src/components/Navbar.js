@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import styled from "styled-components"
 import { keyframes } from 'styled-components'
 import { Link } from "react-router-dom";
@@ -14,7 +14,10 @@ function Navbar({ toggleModal }) {
             <NavbarContainer>
                 <NavbarLeft>
                     <Logo>
-                        <img src="logo-car.webp" alt="logo car" />
+                        <Link to="/">
+                            <img src="logo-car.webp" alt="logo car" />
+                        </Link>
+
                     </Logo>
                     <NavbarOption>
                         <NavbarOptionItem>
@@ -108,7 +111,7 @@ function Navbar({ toggleModal }) {
                             <Link to="/">GIỚI THIỆU</Link>
                         </NavbarOptionRightItem>
                         <NavbarOptionRightItem>
-                            <Link to="/">TIN TỨC</Link>
+                            <Link to="/news">TIN TỨC</Link>
                         </NavbarOptionRightItem>
                         <NavbarOptionRightItem>
                             <Link to="/">LIÊN HỆ</Link>
@@ -122,7 +125,7 @@ function Navbar({ toggleModal }) {
                             <RiAccountCircleFill size={30} />
                         </NavbarIcon>
                     </NavbarRightIcons>
-                    <NavbarIconMenu onClick={()=>setOpenMenu(true)}>
+                    <NavbarIconMenu onClick={() => setOpenMenu(true)}>
                         <AiOutlineMenu />
                     </NavbarIconMenu>
                 </NavbarRight>
