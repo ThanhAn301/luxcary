@@ -2,6 +2,8 @@ import { NewsData } from './NewsData'
 import styled,{keyframes} from 'styled-components'
 import Breadcrumbs from './Breadcrumbs';
 import {useNavigate} from 'react-router-dom'
+import Huracane from "../assets/images/_cover Huracan_06_20k_m.jpg"
+
 
 
 function Newspaper() {
@@ -21,7 +23,7 @@ function Newspaper() {
                         return (
                             <NewsContainer key={index}>
                                 <NewsThumb>
-                                    <img src="aventador-1.jpg" alt="thumb" />
+                                    <img src={Huracane} alt="thumb" />
                                 </NewsThumb>
                                 <NewsInfoWrap>
                                     <NewsDate>
@@ -79,6 +81,7 @@ const NewsContainer = styled.div`
 const NewsThumb = styled.div`
     width: 50%;
     img{
+        object-fit: cover;
         width: 100%;
         height: 100%;
     }
@@ -120,6 +123,7 @@ const Button = styled.div`
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    cursor: pointer;
     &:hover{
         background-color: #181818;
         color: #fff;

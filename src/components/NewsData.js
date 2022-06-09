@@ -1,5 +1,3 @@
-import React from "react";
-
 export const NewsData = [
     {
         title:"Lamborghini Debut in Ho Chi Minh City",

@@ -11,16 +11,16 @@ function Footer() {
     <FooterContainer>
       <FooterRow>
         <FooterInfoCol>
-          <FooterInfo href='#'>
+          <FooterInfo href='/introduction'>
             Doanh nghiệp
           </FooterInfo>
           <FooterInfo href='#'>
             Tuyển dụng
           </FooterInfo>
-          <FooterInfo href='#'>
+          <FooterInfo href='/contact'>
             Liên hệ
           </FooterInfo>
-          <FooterInfo href='#'>
+          <FooterInfo href='/news'>
             Truyền thông
           </FooterInfo>
           <FooterInfo href='#'>

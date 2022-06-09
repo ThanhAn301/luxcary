@@ -6,6 +6,11 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { RiAccountCircleFill } from "react-icons/ri";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaTimes } from "react-icons/fa";
+import LogoCar from "../assets/images/logo-car.webp"
+import Aventador1 from "../assets/images/aventador-1.jpg"
+import Aventador2 from "../assets/images/aventador-2.jpg"
+
+
 function Navbar({ toggleModal }) {
     const [openMenu, setOpenMenu] = useState(false);
 
@@ -15,7 +20,7 @@ function Navbar({ toggleModal }) {
                 <NavbarLeft>
                     <Logo>
                         <Link to="/">
-                            <img src="logo-car.webp" alt="logo car" />
+                            <img src={LogoCar} alt="logo car" />
                         </Link>
 
                     </Logo>
@@ -31,13 +36,13 @@ function Navbar({ toggleModal }) {
                                                 <AsideCarNameDetailItem>
                                                     <a href="">AVENTADOR 1</a>
                                                     <AsideCarImg>
-                                                        <img src="aventador-1.jpg" alt="car" />
+                                                        <img src={Aventador1} alt="car" />
                                                     </AsideCarImg>
                                                 </AsideCarNameDetailItem>
                                                 <AsideCarNameDetailItem>
                                                     <a href="">AVENTADOR 2</a>
                                                     <AsideCarImg>
-                                                        <img src="aventador-2.jpg" alt="car" />
+                                                        <img src={Aventador2} alt="car" />
                                                     </AsideCarImg>
                                                 </AsideCarNameDetailItem>
                                                 <AsideCarNameDetailItem>
@@ -108,13 +113,13 @@ function Navbar({ toggleModal }) {
                 <NavbarRight>
                     <NavbarOptionRight>
                         <NavbarOptionRightItem>
-                            <Link to="/">GIỚI THIỆU</Link>
+                            <Link to="/introduction">GIỚI THIỆU</Link>
                         </NavbarOptionRightItem>
                         <NavbarOptionRightItem>
                             <Link to="/news">TIN TỨC</Link>
                         </NavbarOptionRightItem>
                         <NavbarOptionRightItem>
-                            <Link to="/">LIÊN HỆ</Link>
+                            <Link to="/contact">LIÊN HỆ</Link>
                         </NavbarOptionRightItem>
                     </NavbarOptionRight>
                     <NavbarRightIcons>
@@ -184,6 +189,7 @@ const NavbarContainer = styled.div`
     @media (max-width: 739px) {
         height: 60px;
     }
+    z-index:999999999;
 
 `
 const NavbarLeft = styled.div`
@@ -290,6 +296,7 @@ left: -173px;
 background-color: #181818;
 animation: ${growDown} 0.05s ease-in;
 display: none;
+z-index: 999;
 `
 
 const AsideCarOptions = styled.ul`
@@ -348,6 +355,7 @@ position: absolute;
     background-color: #181818;
     animation: ${growDown} ease-in 0.05s;
     display: none;
+    z-index: 999;
 `
 
 const Aside2StoreOptions = styled.ul`
@@ -364,6 +372,7 @@ left: -373px;
 background-color: #181818;
 animation: ${growDown} ease-in 0.05s;
 display: none;
+z-index: 999;
 `
 
 const NavbarOptionItem = styled.li`
