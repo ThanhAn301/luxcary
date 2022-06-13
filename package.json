@@ -13,6 +13,8 @@
     "react-map-gl": "^7.0.15",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
+    "sass": "^1.52.3",
+    "sass-loader": "^13.0.0",
     "styled-components": "^5.3.5"
   },
   "scripts": {
