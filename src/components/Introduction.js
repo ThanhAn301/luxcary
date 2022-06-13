@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Intro1 from "../assets/images/winkelman_12_01.webp"
-import Intro2 from "../assets/images/winkelman_12_01.webp"
 
 
 function Introduction() {
@@ -40,7 +39,7 @@ function Introduction() {
                     Share capital duly paid up Euros 130.000.000<br></br>
                     P Iva 00591801204  Fiscal code 03049840378<br></br>
                     A sole shareholder company part of Audi Group<br></br>
-                    Registered email address: <a href=""> automobililamborghini@legalmail.it </a>
+                    Registered email address: <a href="mailto:?automobililamborghini@legalmail.it"> automobililamborghini@legalmail.it </a>
                 </p>
             </Data>
 
@@ -74,17 +73,7 @@ function Introduction() {
             <div class="container" style={{marginLeft: '180px'}}>
                 <div class="row">
                     <div class="col-sm">
-                        <img className='image' src="poma.webp"/>
-                        <p className="Name">PAOLO POMA</p>
-                        <p className="role">Chief Financial Officer</p>
-                    </div>
-                    <div class="col-sm">
-                        <img className='image' src="poma.webp"/>
-                        <p className="Name">PAOLO POMA</p>
-                        <p className="role">Chief Financial Officer</p>
-                    </div>
-                    <div class="col-sm">
-                        <img className='image' src="poma.webp"/>
+                        <img className='image' src="poma.webp" alt=""/>
                         <p className="Name">PAOLO POMA</p>
                         <p className="role">Chief Financial Officer</p>
                     </div>
