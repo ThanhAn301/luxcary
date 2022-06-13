@@ -1,0 +1,1 @@
+<h2 style="width: 100%; text-align: center; margin-top: 50px; margin-bottom: 70px;">BẠN ĐÃ ĐẶT HÀNG THÀNH CÔNG</h2>
