@@ -37,25 +37,25 @@ if (isset($_GET["c"]))
         <?php
             switch ($c){
                 case 0:
-                    include "pages/pIndex.php";
+                    include "pages/Index.php";
                 break;
                 case 1:
-                    include "pages/qlTaiKhoan/pIndex.php";
+                    include "pages/qlTaiKhoan/Index.php";
                 break;
                 case 2:
-                    include "pages/qlSanPham/pIndex.php";
+                    include "pages/qlSanPham/Index.php";
                 break;
                 case 3:
-                    include "pages/qlDonDatHang/pIndex.php";
+                    include "pages/qlDonDatHang/Index.php";
                 break;
                 case 4:
-                    include "pages/qlNhaSX/pIndex.php";
+                    include "pages/qlNhaSX/Index.php";
                 break;
                 case 5:
-                    include "pages/qlLoaiSanPham/pIndex.php";
+                    include "pages/qlLoaiSanPham/Index.php";
                 break;
                 default:
-                    include "pages/pError.php";
+                    include "pages/Error.php";
             break;
             }        
         ?>

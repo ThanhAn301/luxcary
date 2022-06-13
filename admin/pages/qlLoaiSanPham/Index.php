@@ -7,19 +7,19 @@
 
     switch ($a) {
         case 1:
-            include "pages/qlLoaiSanPham/pDanhSach.php";
+            include "pages/qlLoaiSanPham/DanhSach.php";
             break;
         case 2:
-            include "pages/qlLoaiSanPham/pThemMoi.php";
-            include "pages/qlLoaiSanPham/pDanhSach.php";
+            include "pages/qlLoaiSanPham/ThemMoi.php";
+            include "pages/qlLoaiSanPham/DanhSach.php";
             break;
         case 3:
-            include "pages/qlLoaiSanPham/pCapNhat.php";
-            include "pages/qlLoaiSanPham/pDanhSach.php";
+            include "pages/qlLoaiSanPham/CapNhat.php";
+            include "pages/qlLoaiSanPham/DanhSach.php";
             break;
     
         default:
-            include "pages/pError.php";
+            include "pages/Error.php";
             break;
     }
     ?>

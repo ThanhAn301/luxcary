@@ -24,7 +24,7 @@ $_SESSION["path"] = $_SERVER["REQUEST_URI"];
     if (isset($_GET["a"]) == true)
         $a = $_GET["a"];
     if ($a == 1) {
-        include "pages/pCarousel.php";
+        include "pages/Carousel.php";
     } elseif ($a == 0) {
         $a = 1;
     }
@@ -33,19 +33,19 @@ $_SESSION["path"] = $_SERVER["REQUEST_URI"];
         case 1:
             echo '<div class="wrapper">';
             include "modules/mSidebar.php";
-            include "pages/pIndex.php";
+            include "pages/Index.php";
             echo '</div>';
             break;
         case 2:
             echo '<div class="wrapper">';
             include "modules/mSidebar.php";
-            include "pages/pSanPhamTheoHang.php";
+            include "pages/SanPhamTheoHang.php";
             echo '</div>';
             break;
         case 3:
             echo '<div class="wrapper">';
             include "modules/mSidebar.php";
-            include "pages/pSanPhamTheoLoai.php";
+            include "pages/SanPhamTheoLoai.php";
             echo '</div>';
             break;
 
@@ -54,41 +54,41 @@ $_SESSION["path"] = $_SERVER["REQUEST_URI"];
             echo '<div class="wrapper-product">';
 
             include "modules/mSidebar.php";
-            include "pages/pChiTiet.php";
+            include "pages/ChiTiet.php";
             echo '</div>';
             echo '</div>';
 
-            include "pages/pSanPhamCungLoai.php";
+            include "pages/SanPhamCungLoai.php";
             break;
         case 5:
-            include "pages/GioHang/pIndex.php";
+            include "pages/GioHang/Index.php";
             break;
         case 6:
-            include "pages/TaoTaiKhoan/pIndex.php";
+            include "pages/TaoTaiKhoan/Index.php";
             break;
         case 7:
             echo '<div class="wrapper">';
             include "modules/mSidebar.php";
-            include "pages/pSearch.php";
+            include "pages/Search.php";
             echo '</div>';
             break;
         case 8:
             echo '<div class="wrapper">';
-            include "pages/pContact.php";
+            include "pages/Contact.php";
             echo '</div>';
             break;
         case 9:
             echo '<div class="wrapper">';
-            include "pages/pAboutUs.php";
+            include "pages/AboutUs.php";
             echo '</div>';
             break;
         case 10:
             echo '<div class="wrapper">';
-            include "pages/ThongTinTaiKhoan/pProfile.php";
+            include "pages/ThongTinTaiKhoan/Profile.php";
             echo '</div>';
             break;
         default:
-            include "pages/pError.php";
+            include "pages/Error.php";
             break;
     }
     ?>

@@ -5,7 +5,7 @@
     
     switch ($sub){
         case 1:
-            include "pages/TaoTaiKhoan/pTaoTaiKhoan.php";
+            include "pages/TaoTaiKhoan/TaoTaiKhoan.php";
         break;
         default:
             DataProvider::ChangeURL("index.php?a=404");

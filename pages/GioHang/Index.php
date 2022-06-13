@@ -23,10 +23,10 @@
         $sub = $_GET["sub"];
     switch($sub){
         case 1:
-            include "pages/GioHang/pDanhSach.php";
+            include "pages/GioHang/DanhSach.php";
         break;
         case 2:
-            include "pages/GioHang/pThongBaoDatHangThanhCong.php";
+            include "pages/GioHang/ThongBaoDatHangThanhCong.php";
         break;
         default:
             DataProvider::ChangeURL("index.php?a=404");
