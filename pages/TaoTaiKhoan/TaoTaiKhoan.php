@@ -1,5 +1,5 @@
 <div class="register-contain" style="background-color: white;">
-    <h1 style="text-align: center; color: #70c5c0; margin-bottom: 50px;">Đăng ký</h1>
+    <h1 style="text-align: center; color: #fe8036; margin-bottom: 50px;">Đăng ký</h1>
     <form action="pages/TaoTaiKhoan/xlTaoTaiKhoan.php"  onsubmit="return KiemTra()" method="POST">
 
         <div class="row">
